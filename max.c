@@ -29,4 +29,6 @@ int main(int argc, char** argv) {
   int max_b = max(7, b);
   printf("max(7, b) = %d\n", max_b);
   assert(max_b == 9);
+
+//test by zhangsan
 }
