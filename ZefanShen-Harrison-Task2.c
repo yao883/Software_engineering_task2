@@ -40,4 +40,9 @@ int main(int argc, char** argv) {
   int max_c = max(2, c);
   printf("max(2,c) = %d\n", max_c);
   assert(max_c == 7);
+  
+  int d[]  = {7};
+  int max_d=max(1,d);
+  printf("max(1,d)= %d\n", max_d);
+  assert(max_d == 7);
 }
