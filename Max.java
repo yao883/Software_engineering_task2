@@ -11,7 +11,7 @@ class Max {
     public static int max(int n, int A[]) {
         assert n > 0;
         int max = A[n-1];
-        for (int i=n-2; i>0; i--)
+        for (int i=n-2; i>=0; i--)
             if (A[i] > max)
                 max = A[i];
         
@@ -29,5 +29,10 @@ class Max {
         int max_b = max(7, b);
         System.out.println("max(7, b) = " + max_b);
         assert max_b == 9;
+
+        int c[] = {12, 3, 5, 3, 7, 9, 4};
+        int max_c = max(7, c);
+        System.out.println("max(7, c) = " + max_c);
+        assert max_c == 12;
     }
 }
