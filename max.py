@@ -8,7 +8,7 @@
 def max(n, a):
     assert n > 0
     max = a[n-1]
-    for i in range(n-2, 0, -1):
+    for i in range(n-2, -1, -1):
         if a[i] > max:
             max = a[i]
 
@@ -24,3 +24,8 @@ b = [7, 3, 5, 3, 7, 9, 4]
 max_b = max(7, b)
 print("max(7, b) = " + str(max_b))
 assert max_b == 9
+
+c = [5, 4, 3, 2, 1]
+max_c = max(5, c)
+print("max(5, c) = " + str(max_c))
+assert max_c == 5
