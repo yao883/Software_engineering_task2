@@ -11,7 +11,7 @@
 int max(int n, int *a) {
   assert(n > 0);
   int max = a[n-1];
-  for (int i=n-2; i>0; i--)
+  for (int i = n-2; i >= 0; i--)// I changed "i>0" to "i>=0".
     if (a[i] > max)
       max = a[i];
 
@@ -20,6 +20,7 @@ int max(int n, int *a) {
 
 
 int main(int argc, char** argv) {
+
   int a[] = {1, 2, 3, 4};
   int max_a = max(4, a);
   printf("max(4, a) = %d\n", max_a);
@@ -29,4 +30,14 @@ int main(int argc, char** argv) {
   int max_b = max(7, b);
   printf("max(7, b) = %d\n", max_b);
   assert(max_b == 9);
+  
+  //testcase added
+  int c[] = {9 ,8 ,7 ,6 ,5 ,4 ,3 ,2 ,1 ,0};
+  int max_c = max(10, c);
+  printf("max(10, c) = %d\n", max_c);
+  assert(max_c == 9);//It would alert because the max() will ignore c[0]. So, it should be: for (int i=n-2; i>=0; i--) in the max function.
+  
+  
+  return 0;
 }
+//Jimmy Li
