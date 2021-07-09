@@ -23,3 +23,7 @@ print("max(2, a) = " + str(max_a))
 b = [90,7, 3, 5, 3, 7, 9, 4]
 max_b = max(7, b)
 print("max(7, b) = " + str(max_b))
+
+c = [9099,7, 3, 15, 32, 73, 19, 4]
+max_c = max(7, c)
+print("max(7, c) = " + str(max_c))
