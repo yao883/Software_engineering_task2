@@ -7,8 +7,8 @@
  #   (3) Submit your changes on GitHub as a pull request
 def max(n, a):
     assert n > 0
-    max = a[n-1]
-    for i in range(n-2, 0, -1):
+    max = a[0]
+    for i in range(0,n):
         if a[i] > max:
             max = a[i]
 

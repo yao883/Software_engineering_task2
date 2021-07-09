@@ -11,7 +11,7 @@ class Max {
     public static int max(int n, int A[]) {
         assert n > 0;
         int max = A[n-1];
-        for (int i=n-2; i>0; i--)
+        for (int i=n-2; i>=0; i--)
             if (A[i] > max)
                 max = A[i];
         
